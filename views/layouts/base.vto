@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.webp">
+  {{ head }}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 100%;
+    }
+
+    :root {
+      --bg: #fffffc;
+      --text: #550544;
+      --accent: #2a65bd;
+      --secondary: #83707f;
+
+      @media (prefers-color-scheme: dark) {
+        --bg: #201d1a;
+        --text: #f4dcff;
+        --accent: #86ade7;
+        --secondary: #8f798a;
+      }
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 2px;
+    }
+  </style>
+  {{ styles }}
+</head>
+
+<body>
+  {{ content }}
+</body>
+
+</html>
