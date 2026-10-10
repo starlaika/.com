@@ -5,11 +5,6 @@ import createVento from 'ventojs'
 
 const vento = createVento({ includes: join(import.meta.dirname, 'views') })
 
-const buildDate = (function getBuildDate() {
-  const now = new Date().toISOString()
-  return now.slice(0, now.indexOf('T'))
-})()
-
 await rm('dist', { recursive: true, force: true })
 await cp('public', 'dist', { recursive: true, preserveTimestamps: true })
 
@@ -18,8 +13,7 @@ await writeFile('dist/404.html', await buildHtml('404.vto'))
 
 async function buildHtml(file: string) {
   const { content } = await vento.run(file, {
-    SITE: 'https://starlaika.github.io',
-    BUILD_DATE: buildDate,
+    SITE: 'https://starlaika.com',
   })
 
   const minified = await minify(content, {
