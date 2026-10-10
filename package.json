@@ -7,15 +7,15 @@
     "build": "node build.ts"
   },
   "dependencies": {
-    "html-minifier-next": "^7.5.2",
+    "html-minifier-next": "^8.10.7",
     "lightningcss": "^1.33.0",
-    "terser": "^5.49.0",
-    "ventojs": "^2.4.0"
+    "terser": "^5.51.2",
+    "ventojs": "^2.4.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.6",
-    "@types/node": "^26.1.2",
+    "@biomejs/biome": "^2.5.15",
+    "@types/node": "^26.6.5",
     "typescript": "^7.0.2"
   },
-  "packageManager": "pnpm@11.18.0+sha512.33d83c77da82f49fba836925c6f1b841181ec3132b670639bd012f7075f5c7cf634c5f870147c19aae7478fac01df09d8892e880454896edd23ee9b33757563c"
+  "packageManager": "pnpm@12.10.1+sha512.ba40a37eb1a370d60fea8c4cf1d364c13bcccef518e98ad2bcee954f539d38da37458e58261a3fa55e06523450ea0ffff9f497b135be41f2c15c1642bacace6c"
 }
